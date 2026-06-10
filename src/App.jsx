@@ -453,30 +453,64 @@ export default function App() {
       </section>
 
       {/* EXPERIENCE */}
-     const experiences = [
-    {
-      period: "Jan 2025 – Mar 2026", role: "IT Client Support Intern", org: "Hytech Power Inc.", color: t.accent,
-      points: ["Provided remote and on-site technical support to employees and end users", "Resolved hardware, software, printer, and network connectivity issues", "Assisted with system setup, user accounts, and workstation troubleshooting"],
-    },
-    {
-      period: "Jun 2019 – Dec 2019", role: "Chat Support Representative", org: "Concentrix", color: t.cyan,
-      points: ["Delivered real-time customer assistance through live chat support", "Resolved billing, service, and technical concerns efficiently", "Maintained high accuracy while handling multiple customer interactions"],
-    },
-    {
-      period: "Feb 2017 – Apr 2018", role: "Customer Sales Advocate / Mobility Support", org: "STI", color: t.purple,
-      points: ["Assisted customers in selecting mobile and digital products", "Explained pricing, features, promotions, and checkout process", "Achieved service and sales performance targets"],
-    },
-    {
-      period: "Oct 2016 – Jan 2017", role: "Customer Service Representative", org: "SPi CRM", color: "#f59e0b",
-      points: ["Processed customer orders, refunds, exchanges, and shipment tracking requests", "Resolved product and delivery concerns through email and chat channels", "Ensured accurate and timely responses to customers"],
-    },
-    {
-      period: "2021 – 2025", role: "BS Information Systems", org: "Batangas Eastern Colleges", color: "#10b981",
-      points: ["Dean's List Awardee: 2022–2023 and 2024–2025", "2nd Place – Hack San Juan Civic Hackathon", "Focused on IT infrastructure, systems analysis, and digital solutions"],
-      isEdu: true,
-    },
-  ];
-
+   const experiences = [
+  {
+    period: "Jan 2025 – Mar 2026",
+    role: "IT Client Support Intern",
+    org: "Hytech Power Inc.",
+    color: "#3b82f6",
+    points: [
+      "Provided remote and on-site technical support to employees and end users",
+      "Resolved hardware, software, printer, and network connectivity issues",
+      "Assisted with system setup, user accounts, and workstation troubleshooting"
+    ],
+  },
+  {
+    period: "Jun 2019 – Dec 2019",
+    role: "Chat Support Representative",
+    org: "Concentrix",
+    color: "#06b6d4",
+    points: [
+      "Delivered real-time customer assistance through live chat support",
+      "Resolved billing, service, and technical concerns efficiently",
+      "Maintained high accuracy while handling multiple customer interactions"
+    ],
+  },
+  {
+    period: "Feb 2017 – Apr 2018",
+    role: "Customer Sales Advocate / Mobility Support",
+    org: "STI",
+    color: "#8b5cf6",
+    points: [
+      "Assisted customers in selecting mobile and digital products",
+      "Explained pricing, features, promotions, and checkout process",
+      "Achieved service and sales performance targets"
+    ],
+  },
+  {
+    period: "Oct 2016 – Jan 2017",
+    role: "Customer Service Representative",
+    org: "SPi CRM",
+    color: "#f59e0b",
+    points: [
+      "Processed customer orders, refunds, exchanges, and shipment tracking requests",
+      "Resolved product and delivery concerns through email and chat channels",
+      "Ensured accurate and timely responses to customers"
+    ],
+  },
+  {
+    period: "2021 – 2025",
+    role: "BS Information Systems",
+    org: "Batangas Eastern Colleges",
+    color: "#10b981",
+    points: [
+      "Dean's List Awardee: 2022–2023 and 2024–2025",
+      "2nd Place – Hack San Juan Civic Hackathon",
+      "Focused on IT infrastructure, systems analysis, and digital solutions"
+    ],
+    isEdu: true,
+  },
+];
       {/* CERTIFICATIONS */}
       <section id="certifications" style={{ padding: "80px clamp(16px,5vw,80px)", background: t.bg }}>
         <Reveal><SectionTitle t={t} label="LEARNING" title="Certifications & Training" /></Reveal>
