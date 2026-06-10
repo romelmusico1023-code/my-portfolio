@@ -453,17 +453,29 @@ export default function App() {
       </section>
 
       {/* EXPERIENCE */}
-      <section id="experience" style={{ padding: "80px clamp(16px,5vw,80px)", background: dark ? "#0a0f1e" : "#e8eeff" }}>
-        <Reveal><SectionTitle t={t} label="MY JOURNEY" title="Experience" /></Reveal>
-        <div style={{ maxWidth: 720, margin: "0 auto" }}>
-          {[
-            { period: "2023 – Present", role: "Freelance AI Automation Learner", org: "Self-Directed Projects", color: t.accent, points: ["Designed AI-assisted workflow concepts for customer support and operations", "Explored ChatGPT, prompt engineering, and automation tools", "Built portfolio projects demonstrating real-world AI applications"] },
-            { period: "2022 – 2023", role: "Customer Service Representative", org: "Customer Support Experience", color: t.cyan, points: ["Handled inbound and outbound customer inquiries via email and chat", "Resolved technical and billing issues with a high customer satisfaction rate", "Maintained accurate records and escalated complex cases appropriately"] },
-            { period: "2021 – 2022", role: "Administrative & Freight VA", org: "Virtual Operations Support", color: t.purple, points: ["Supported dispatch scheduling and delivery documentation", "Coordinated freight logistics and maintained organized records", "Assisted with data entry, reporting, and operational communications"] },
-            { period: "2018 – 2022", role: "BS Information Systems", org: "University Graduate", color: "#f59e0b", points: ["Graduated with focus on systems analysis, IT infrastructure, and digital solutions", "Studied database management, networking, and software development fundamentals", "Completed capstone projects in business process automation and systems design"] },
-          ].map((item, i) => (<Reveal key={item.role} delay={i * 0.1}><TimelineItem t={t} item={item} /></Reveal>))}
-        </div>
-      </section>
+     const experiences = [
+    {
+      period: "Jan 2025 – Mar 2026", role: "IT Client Support Intern", org: "Hytech Power Inc.", color: t.accent,
+      points: ["Provided remote and on-site technical support to employees and end users", "Resolved hardware, software, printer, and network connectivity issues", "Assisted with system setup, user accounts, and workstation troubleshooting"],
+    },
+    {
+      period: "Jun 2019 – Dec 2019", role: "Chat Support Representative", org: "Concentrix", color: t.cyan,
+      points: ["Delivered real-time customer assistance through live chat support", "Resolved billing, service, and technical concerns efficiently", "Maintained high accuracy while handling multiple customer interactions"],
+    },
+    {
+      period: "Feb 2017 – Apr 2018", role: "Customer Sales Advocate / Mobility Support", org: "STI", color: t.purple,
+      points: ["Assisted customers in selecting mobile and digital products", "Explained pricing, features, promotions, and checkout process", "Achieved service and sales performance targets"],
+    },
+    {
+      period: "Oct 2016 – Jan 2017", role: "Customer Service Representative", org: "SPi CRM", color: "#f59e0b",
+      points: ["Processed customer orders, refunds, exchanges, and shipment tracking requests", "Resolved product and delivery concerns through email and chat channels", "Ensured accurate and timely responses to customers"],
+    },
+    {
+      period: "2021 – 2025", role: "BS Information Systems", org: "Batangas Eastern Colleges", color: "#10b981",
+      points: ["Dean's List Awardee: 2022–2023 and 2024–2025", "2nd Place – Hack San Juan Civic Hackathon", "Focused on IT infrastructure, systems analysis, and digital solutions"],
+      isEdu: true,
+    },
+  ];
 
       {/* CERTIFICATIONS */}
       <section id="certifications" style={{ padding: "80px clamp(16px,5vw,80px)", background: t.bg }}>
