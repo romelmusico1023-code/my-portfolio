@@ -249,6 +249,16 @@ export default function App() {
   const t = dark ? T.dark : T.light;
 
   useEffect(() => {
+    if (typeof window !== "undefined") {
+      if ("scrollRestoration" in window.history) {
+        window.history.scrollRestoration = "manual";
+      }
+      if (window.location.hash) {
+        window.history.replaceState(null, "", window.location.pathname + window.location.search);
+      }
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    }
+
     const fn = () => setScrolled(window.scrollY > 48);
     window.addEventListener("scroll", fn);
     return () => window.removeEventListener("scroll", fn);
